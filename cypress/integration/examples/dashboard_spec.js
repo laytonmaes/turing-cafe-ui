@@ -37,4 +37,18 @@ describe("Dashboard User Flow", () => {
         cy.get(".card h3").eq(4).should("have.text", "7:00")
         cy.get(".card h3").eq(5).should("have.text", "2")
     })
+
+    it("should create and display a new card with input data", () => {
+        cy.get("input").eq(0).type("Maxwell")
+        cy.get("input").eq(1).type("11/14")
+        cy.get("input").eq(2).type("9:00")
+        cy.get("input").eq(3).type("6")
+
+        cy.get("form button").click()
+
+        cy.get(".card h2").eq(3).should("have.text", "Maxwell")
+        cy.get(".card h3").eq(9).should("have.text", "11/14")
+        cy.get(".card h3").eq(10).should("have.text", "9:00")
+        cy.get(".card h3").eq(11).should("have.text", "6")
+    })
 })
