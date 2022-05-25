@@ -7,7 +7,7 @@ return (
         <h3>{props.date}</h3>
         <h3>{props.time}</h3>
         <h3>{props.number}</h3>
-        <button className="cancel-button">Cancel</button>
+        {/* <button className="cancel-button">Cancel</button> */}
     </div>
 )
 }
