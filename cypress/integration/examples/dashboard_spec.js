@@ -14,6 +14,8 @@ describe("Dashboard User Flow", () => {
         cy.get("input").first()
         .should("have.value", "")
         .should("have.attr", "name").and("include", "name")
+        cy.get("input").first().type("stuff")
+        cy.get("input").first().should("have.value", "stuff")
         cy.get("input").eq(1)
         .should("have.value", "")
         .should("have.attr", "name").and("include", "date")
