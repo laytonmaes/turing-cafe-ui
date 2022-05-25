@@ -17,3 +17,24 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+.card {
+  margin: 20px;
+  background-color: aliceblue;
+  height: 250px;
+  width: 175px;
+  color: darkcyan;
+  border: 4px solid darkcyan;
+}
+
+.cancel-button {
+  background-color: darkcyan;
+  color: white;
+  height: 40px;
+  width: 100px;
+}
+
+.resy-form {
+  display: flex;
+  flex-wrap: wrap;
+}
